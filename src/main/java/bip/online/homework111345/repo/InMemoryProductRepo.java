@@ -1,15 +1,15 @@
 package bip.online.homework111345.repo;
 
 import bip.online.homework111345.entity.Product;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.context.annotation.SessionScope;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 @Repository
-@Scope("session")
+@SessionScope
 public class InMemoryProductRepo implements IProductRepo {
     private final List<Product> products = new ArrayList<>();
 
