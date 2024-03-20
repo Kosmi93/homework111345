@@ -3,7 +3,6 @@ package bip.online.homework111345.service;
 import bip.online.homework111345.entity.Product;
 import bip.online.homework111345.repo.IProductRepo;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
@@ -11,7 +10,6 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-@Scope("session")
 public class ProductService implements IProductService {
     private final IProductRepo repo;
 
